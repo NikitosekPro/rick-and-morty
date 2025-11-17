@@ -1,0 +1,112 @@
+
+.slider-main {
+    background-color: rgba(13, 23, 29, 1);
+    border-radius: 50px;
+
+    @media screen and (min-width: 769px) {
+        margin-top: 128px;
+    }
+
+
+
+    
+
+}
+
+.slider-title {
+    color: rgba(250, 250, 250, 1);
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 32px;
+    text-align: left;
+    margin-top: 80px;
+
+    @media screen and (min-width: 769px) {
+        font-size: 44px;
+        font-weight: 600;
+        line-height: 48px;
+    }
+
+    @media screen and (min-width: 1279px) {
+        width: 610px;
+        font-size: 44px;
+        font-weight: 600;
+        line-height: 48px;
+        letter-spacing: 0%;
+        text-align: left;
+        margin-left: 126px;
+    }
+    
+
+}
+
+.slider-title>span {
+    background-color: rgba(161, 215, 55, 1);
+    border-radius: 44px;
+    width: 119px;
+    padding-left: 5px;
+    padding-right: 5px;
+    text-align: center;
+}
+
+
+.image-slider {
+    border-radius: 10px;
+    border: 1px solid rgba(161, 215, 55, 1);
+    
+
+    @media screen and (min-width: 769px) {
+        width: 276px;
+        border: 1px solid rgba(161, 215, 55, 1);
+        border-radius: 18px;
+    }
+
+
+
+
+}
+
+
+.slider-episodes {
+    margin-top: 34px;
+    
+
+}
+
+
+.image6 {
+    display: none;
+
+    @media screen and (min-width: 769px) {
+        display: none;
+    }
+
+    @media screen and (min-width: 1279px) {
+        display: block;
+    }
+}
+
+
+
+
+.slider-episodes-btn {
+    width: 96px;
+    height: 36px;
+    border-radius: 1000px;
+    background: rgba(161, 215, 55, 1);
+    margin-bottom: 80px;
+    margin-top: 20px;
+    margin-left: 240px;
+
+
+    @media screen and (min-width: 769px) {
+        margin-left: 623px;
+    }
+
+    @media screen and (min-width: 1279px) {
+        margin-left: 1101px;
+    }
+
+
+}
+

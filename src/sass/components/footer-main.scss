@@ -1,0 +1,158 @@
+
+.footer-main {
+    background-color: rgba(250, 250, 250, 1);
+
+    @media screen and (min-width: 1279px)  {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+    }
+
+}
+
+.footer-all-holder {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    flex-direction: row;
+
+    @media screen and (min-width: 1279px) {
+        gap: 331px;
+        margin: 0 auto;
+    }
+
+}
+
+.footer-logo-holder {
+    position: relative;
+    margin-top: 20px;
+}
+
+.logo-footer {
+    height: 107px;
+    
+
+    @media screen and (min-width: 769px) {
+        display: none;
+    }
+
+}
+
+
+
+.logo-footer-tablet {
+    display: none;
+
+
+    @media screen and (min-width: 769px) {
+        display: block;
+        width: 225px;
+        margin: 0;
+    }
+
+    
+
+}
+
+
+
+.morty-rick-footer {
+    position: absolute;
+    width: 71px;
+    height: 60px;
+    top: -5px;
+    left: 5px;
+
+
+    @media screen and (min-width: 1279px) {
+        top: -19.20px;
+    }
+
+}
+
+
+.footer-main-medias {
+    display: flex;
+    justify-content: right;
+    align-items: end;
+    flex-direction: row;
+
+
+    
+
+}
+
+.footer-main-list {
+    display: flex;
+    justify-content: right;
+    text-align: left;
+    flex-direction: column;
+    margin-right: 35px;
+    margin-bottom: 15px;
+
+    @media screen and (min-width: 769px) {
+        row-gap: 10px;
+        margin-left: 96px;
+    }
+
+    @media screen and (min-width: 1279px) {
+        row-gap: 10px;
+        margin-right: 200px;
+    }
+
+
+}
+
+.footer-media-holder {
+    display: flex;
+    align-items: end;
+    flex-direction: column;
+    text-align: left;
+    width: 144px;
+
+
+    @media screen and (min-width: 769px) {
+        flex-direction: row;
+        width: 383px;
+        align-items: center;
+        
+    }
+
+    @media screen and (min-width: 1279px) {
+        flex-direction: row;
+        width: 1008px;
+        align-items: center;
+        
+    }
+
+    
+
+
+}
+
+
+.footer-main-medias {
+    display: flex;
+    justify-content: end;
+    gap: 5px;
+    margin-left: 23px;
+
+
+    @media screen and (min-width: 1279px) {
+        margin-left: 226px;
+    }
+
+}
+
+
+
+.footer-main-text {
+    margin-top: 80px;
+    color: rgba(17, 17, 17, 0.4);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+    text-align: center;
+}
+

@@ -1,16 +1,43 @@
+@use './utils/reset';
+@use './components/footer-dark';
+@use './components/footer-main';
+@use './components/header-img';
+@use './components/header-main';
+@use './components/hero-characters';
+@use './components/hero-episodes';
+@use './components/hero-main';
+@use './components/main-characters';
+@use './components/main-episodes';
+@use './components/modal-characters';
+@use './components/modal-episodes';
+@use './components/modal-main';
+@use './components/slider-main';
 
-@import url('./components/footer-dark.scss');
-@import url('./components/footer-main.scss');
-@import url('./components/header-img.scss');
-@import url('./components/header-main.scss');
-@import url('./components/hero-characters.scss');
-@import url('./components/hero-episodes.scss');
-@import url('./components/hero-main.scss');
-@import url('./components/main-characters.scss');
-@import url('./components/main-episodes.scss');
-@import url('./components/modal-characters.scss');
-@import url('./components/modal-episodes.scss');
-@import url('./components/modal-main.scss');
-@import url('./utils/reset.scss');
 
 
+body {
+    font-family: "Montserrat" , sans-serif;
+    user-select: none;
+}
+
+
+
+
+.container {
+    width: 375px;
+    margin: 0 auto;
+    padding: 20px;
+    /* outline: 1px solid crimson; */
+
+    @media screen and (min-width: 769px) {
+        width: 769px;
+        margin: 0 auto;
+    }
+
+
+    @media screen and (min-width: 1279px) {
+        width: 1279px;
+        margin: 0 auto;
+    }
+
+}
