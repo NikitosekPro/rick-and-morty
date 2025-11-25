@@ -1,0 +1,8 @@
+import "../src/js/API/characters-api"
+import "../src/js/API/episodes-api"
+import "../src/js/API/getCharactersById"
+import "../src/js/API/getOneCharacters"
+import "../src/js/CHARACTERS/render"
+import "../src/js/EPISODES/render-episodes"
+import "../src/js/MAIN-PAGE/main-characters-section"
+import "../src/js/MAIN-PAGE/slider"

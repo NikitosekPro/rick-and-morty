@@ -1,29 +1,30 @@
 .header-characters {
     width: 107px;
-    height: 36px;
+    height: 41px;
     background-color: rgb(161, 215, 55);
     border-radius: 1000px;
     border: none;
     color: rgba(13, 23, 29, 1);
+    padding: 12px;
 
-    @media screen and (min-width: 769px) {
-        padding: 12px 24px 24px 24px;
-    }
+    // @media screen and (min-width: 769px) {
+    //     padding: 12px 24px 24px 24px;
+    // }
 
 }
 
 .header-episodes {
-    width: 107px;
-    height: 36px;
+    width: 96px;
+    height: 41px;
     background-color: rgba(0, 0, 0, 0);
     border-radius: 1000px;
     border: 1px solid rgba(250, 250, 250, 0.3);
     color: rgb(255, 255, 255);
     margin-left: 5px;
+    padding: 10px;
 
     @media screen and (min-width: 769px) {
         margin-right: 340px;
-        padding: 12px 24px 24px 24px;
     }
 
 
@@ -33,17 +34,11 @@
 
 }
 
-.header-episodes:hover {
-    border-color :rgb(250, 250, 250);
-}
 
-.header-characters:hover {
-    border: 1px solid rgb(250, 250, 250);
-}
 
 .header-search {
     width: 103px;
-    height: 36px;
+    height: 41px;
     background-color: rgba(0, 0, 0, 0);
     border-radius: 1000px;
     border: 1px solid rgba(250, 250, 250, 0.3);
@@ -82,4 +77,5 @@
     align-items: center;
     flex-direction: row;
 }
+
 
