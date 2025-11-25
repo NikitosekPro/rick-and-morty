@@ -1,4 +1,5 @@
 .slider-main {
+    height: 744px;
     background-color: rgba(13, 23, 29, 1);
     border-radius: 50px;
     margin: 0 auto;
@@ -106,13 +107,13 @@
 
 
 .slider-episodes-btn {
+    padding: 12px 24px 12px 24px;
     width: 96px;
     height: 36px;
     border-radius: 1000px;
     background: rgba(161, 215, 55, 1);
-    margin-bottom: 80px;
-    margin-top: 20px;
-    margin-left: 240px;
+    
+    margin-left: 217px;
 
 
     @media screen and (min-width: 769px) {
@@ -126,3 +127,11 @@
 
 }
 
+.slider-holder {
+    padding-bottom: 44px;
+}
+
+
+.slider-main-flex {
+    padding-bottom: 107px;
+}
