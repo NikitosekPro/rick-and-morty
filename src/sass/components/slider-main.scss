@@ -1,7 +1,8 @@
-
 .slider-main {
     background-color: rgba(13, 23, 29, 1);
     border-radius: 50px;
+    margin: 0 auto;
+    overflow: hidden;
 
     @media screen and (min-width: 769px) {
         margin-top: 128px;
@@ -13,6 +14,23 @@
 
 }
 
+.image {
+    width: 220px;
+
+
+    @media screen and (min-width: 769px) {
+        width: 278px;
+        height: 314px;
+    }
+
+}
+
+.slider-holder {
+    width: 100%;
+    overflow: hidden;
+}
+
+
 .slider-title {
     color: rgba(250, 250, 250, 1);
     font-size: 28px;
@@ -20,6 +38,7 @@
     line-height: 32px;
     text-align: left;
     margin-top: 80px;
+    margin-bottom: 34px;
 
     @media screen and (min-width: 769px) {
         font-size: 44px;
@@ -50,43 +69,40 @@
 }
 
 
-.image-slider {
-    border-radius: 10px;
-    border: 1px solid rgba(161, 215, 55, 1);
-    
-
-    @media screen and (min-width: 769px) {
-        width: 276px;
-        border: 1px solid rgba(161, 215, 55, 1);
-        border-radius: 18px;
-    }
 
 
 
-
-}
 
 
 .slider-episodes {
-    margin-top: 34px;
-    
+    display: flex;
+    gap: 10px;                 
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    align-items: center;
+    justify-content: flex-start; 
+    width: max-content;           
+    animation: runSlider 12s linear infinite;
+    will-change: transform;
 
 }
 
-
-.image6 {
-    display: none;
-
-    @media screen and (min-width: 769px) {
-        display: none;
-    }
-
-    @media screen and (min-width: 1279px) {
-        display: block;
-    }
+.slider-episodes li {
+    margin-right: 10px;
+    flex: 0 0 auto;
 }
 
 
+
+@keyframes runSlider {
+    from { transform: translateX(0px); }
+    to   { transform: translate3d(-50%, 0, 0); }
+}
+
+.slider-holder:hover .slider-episodes {
+    animation-play-state: paused;
+}
 
 
 .slider-episodes-btn {
