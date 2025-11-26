@@ -1,0 +1,33 @@
+.hero-episodes {
+    background-color: rgba(13, 23, 29, 1);
+    color: white;
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: left;
+
+}
+
+.header-episodes-logo {
+    width: 120px;
+}
+
+.hero-episodes-title {
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 44px;
+    margin-top: 62px;
+    margin-bottom: 14px;
+}
+
+
+.hero-episodes-text {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0%;
+    text-align: left;
+}

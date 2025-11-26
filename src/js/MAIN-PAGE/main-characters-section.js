@@ -1,3 +1,6 @@
+import rickImg from "../../img/Rick-Sanchez-desktop.png"
+
+
 const rick = document.querySelector(".rick");
 const morty = document.querySelector(".morty");
 const summer = document.querySelector(".summer");
@@ -21,7 +24,7 @@ jerry.addEventListener("click" , changeImageJerry)
 
 function changeImageRick() {
     rick.style.color="rgba(161, 215, 55, 1)"
-    image.src = "./img/Rick-Sanchez.png"
+    image.src = rickImg
 
 
     morty.style.color="black"
@@ -30,18 +33,13 @@ function changeImageRick() {
     jerry.style.color="black"
 
 
-    if (image.style.display = "none") {
-        image.src = "./img/Rick-Sanchez-desktop.png"
-        image.style.display = "block"
-        image.style.marginRight = "40px"
-    }
+    
 
 }
 
 function changeImageMorty() {
-    image.src = "./img/Morty-Smith.png"
+    image.src = "./img/Morty-Smith-desktop.png"
     morty.style.color="rgba(161, 215, 55, 1)"
-    image.src = "./img/Morty-Smith.png"
 
 
     rick.style.color="black"
@@ -50,17 +48,14 @@ function changeImageMorty() {
     jerry.style.color="black"
 
 
-    if (image.style.display = "none") {
-        image.src = "./img/Morty-Smith-desktop.png"
-        image.style.display = "block"
-    }
+    
 
 }
 
 
 function changeImageSummer() {
     summer.style.color="rgba(161, 215, 55, 1)"
-    image.src = "./img/Summer-Smith.png"
+    image.src = "./img/Summer-Smith-desktop.png"
 
 
     morty.style.color="black"
@@ -69,16 +64,13 @@ function changeImageSummer() {
     jerry.style.color="black"
 
 
-    if (image.style.display = "none") {
-        image.src = "./img/Summer-Smith-desktop.png"
-        image.style.display = "block"
-    }
+    
 
 }
 
 function changeImageBeth() {
     beth.style.color="rgba(161, 215, 55, 1)"
-    image.src = "./img/Beth-Smith.png"
+    image.src = "./img/Beth-Smith-desktop.png"
 
 
     summer.style.color="black"
@@ -87,17 +79,14 @@ function changeImageBeth() {
     jerry.style.color="black"
 
 
-    if (image.style.display = "none") {
-        image.src = "./img/Beth-Smith-desktop.png"
-        image.style.display = "block"
-    }
+    
 
 }
 
 
 function changeImageJerry() {
     jerry.style.color="rgba(161, 215, 55, 1)"
-    image.src = "./img/Jerry-Smith.png"
+    image.src = "./img/Jerry-Smith-desktop.png"
 
 
     morty.style.color="black"
@@ -106,9 +95,6 @@ function changeImageJerry() {
     rick.style.color="black"
 
 
-    if (image.style.display = "none") {
-        image.src = "./img/Jerry-Smith-desktop.png"
-        image.style.display = "block"
-    }
+    
 
 }
