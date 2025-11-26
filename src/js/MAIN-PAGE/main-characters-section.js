@@ -1,4 +1,8 @@
 import rickImg from "../../img/Rick-Sanchez-desktop.png"
+import mortyImg from "../../img/Morty-Smith-desktop.png"
+import summerImg from "../../img/Summer-Smith-desktop.png"
+import bethImg from "../../img/Beth-Smith-desktop.png"
+import jerrykImg from "../../img/Jerry-Smith-desktop.png"
 
 
 const rick = document.querySelector(".rick");
@@ -38,7 +42,7 @@ function changeImageRick() {
 }
 
 function changeImageMorty() {
-    image.src = "./img/Morty-Smith-desktop.png"
+    image.src = mortyImg
     morty.style.color="rgba(161, 215, 55, 1)"
 
 
@@ -55,7 +59,7 @@ function changeImageMorty() {
 
 function changeImageSummer() {
     summer.style.color="rgba(161, 215, 55, 1)"
-    image.src = "./img/Summer-Smith-desktop.png"
+    image.src = summerImg
 
 
     morty.style.color="black"
@@ -70,7 +74,7 @@ function changeImageSummer() {
 
 function changeImageBeth() {
     beth.style.color="rgba(161, 215, 55, 1)"
-    image.src = "./img/Beth-Smith-desktop.png"
+    image.src = bethImg
 
 
     summer.style.color="black"
@@ -86,7 +90,7 @@ function changeImageBeth() {
 
 function changeImageJerry() {
     jerry.style.color="rgba(161, 215, 55, 1)"
-    image.src = "./img/Jerry-Smith-desktop.png"
+    image.src = jerrykImg
 
 
     morty.style.color="black"
