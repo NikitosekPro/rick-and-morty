@@ -160,38 +160,3 @@
 
 
 
-
-.slider-animated {
-    margin-top: -60px;
-    overflow: hidden;
-}
-
-.slider-track {
-    display: flex;
-    width: calc(200%);
-    animation: scroll 70s linear infinite;
-}
-
-
-
-.slide-block {
-    display: flex;
-    padding: 0;
-    margin: 0;
-    flex-shrink: 0;
-}
-
-
-.sliding-tags {
-    height: 173px;
-}
-
-@keyframes scroll {
-    0% {
-        transform: translateX(0);
-    }
-    100% {
-        transform: translateX(-100%);
-    }
-}
-
