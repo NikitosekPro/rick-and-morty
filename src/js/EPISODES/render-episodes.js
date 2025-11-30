@@ -1,4 +1,4 @@
-let visible = 4;
+let visible = 8;
 const items = document.querySelectorAll(".episode");
 const btn = document.querySelector(".episodes-load-more");
 const image = document.querySelector(".episodes-image-holder");
@@ -40,22 +40,19 @@ function showItems(count) {
         }
     });
 
-    // Show/hide load more button
     btn.style.display = (shown < filteredCount) ? "block" : "none";
-
-    // Show 'no results' image if nothing matches
-    image.style.display = (filter && !foundAny) ? "flex" : "none";
+    image.style.display = (filter && !foundAny) ? "block" : "none";
 }
 
 // ------------------ LOAD MORE ------------------ //
 btn.addEventListener("click", () => {
-    visible += 4;
+    visible += 8;
     showItems(visible);
 });
 
 // ------------------ SEARCH ------------------ //
 episodesNameInput.addEventListener("input", () => {
-    visible = 4; // reset visible items on new search
+    visible = 8;
     showItems(visible);
 });
 
@@ -72,7 +69,7 @@ dropdown.addEventListener("click", (event) => {
     clicked.classList.add("episode-season-option-active");
 
     seasonSelector.textContent = clicked.textContent;
-    visible = 4;
+    visible = 6;
     showItems(visible);
 });
 

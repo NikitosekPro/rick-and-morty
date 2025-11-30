@@ -14,6 +14,45 @@
     flex-direction: column;
     text-align: left;
 
+
+    @media screen and (min-width: 769px) {
+        background-position: 314px 209px;
+        background-repeat: no-repeat;
+        background-size: 346px;
+    }
+
+    @media screen and (min-width: 1279px) {
+        background-position: 880px 230px;
+        background-repeat: no-repeat;
+        background-size: 526px;
+    }
+
+}
+
+
+.episodes-flex {
+    @media screen and (min-width: 769px) {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: row;
+    }
+}
+
+.episodes-text-holder {
+    @media screen and (min-width: 769px) {
+        display: flex;
+        justify-content: left;
+        flex-direction: column;
+        width: 305px;
+        margin-right: 46px;
+        margin-top: 44px;
+    }
+
+    @media screen and (min-width: 1279px) {
+        margin-right: 283px;
+        margin-top: 90px;
+    }
 }
 
 .header-episodes-logo {
@@ -27,6 +66,21 @@
     margin-top: 62px;
     margin-bottom: 14px;
     color: white;
+
+
+    @media screen and (min-width: 769px) {
+        font-size: 60px;
+        font-weight: 600;
+        line-height: 60px;
+    }
+
+    @media screen and (min-width: 1279px) {
+        font-size: 100px;
+        font-weight: 600;
+        line-height: 100px;
+        
+    }
+
 }
 
 
@@ -37,6 +91,19 @@
     text-align: left;
     color: rgba(250, 250, 250, 1);
     margin-bottom: 48px;
+
+
+    @media screen and (min-width: 769px) {
+        margin-bottom: 0;
+    }
+
+    @media screen and (min-width: 1279px) {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 20px;
+        width: 482px;
+    }
+
 }
 
 .hero-episodes-link {
@@ -46,6 +113,14 @@
     border: 1px solid rgba(250, 250, 250, 0.3);
     border-radius: 1000px;
     color: white;
+
+    @media screen and (min-width: 769px) {
+        height: 42px;
+        width: 131px;
+        padding: 10px 17px 9px 19px;
+        margin-top: 32px;
+    }
+
 }
 
 
@@ -54,4 +129,13 @@
     margin-top: 40px;
     margin-bottom: 10px;
     padding-bottom: 80px;
+
+    @media screen and (min-width: 769px) {
+        width: 346px;
+    }
+
+    @media screen and (min-width: 1279px) {
+        width: 504px;
+    }
+
 }
