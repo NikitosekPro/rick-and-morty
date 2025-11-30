@@ -9,4 +9,20 @@
     justify-content: center;
     align-items: center;
     gap: 100px;
+
+
+    @media screen and (min-width: 769px) {
+        gap: 387px;
+    }
+
+    @media screen and (min-width: 1279px) {
+        gap: 867px;
+    }
+
+}
+
+.header-episodes-logo {
+    @media screen and (min-width: 1279px) {
+        transform: scale(1.5);
+    }
 }
