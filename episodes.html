@@ -8,8 +8,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <script type="module" crossorigin src="/rick-and-morty/assets/main-yn8I8ngJ.js"></script>
-    <link rel="stylesheet" crossorigin href="/rick-and-morty/assets/main-CnRTL5M2.css">
+    <script type="module" crossorigin src="/rick-and-morty/assets/main-6DGlGHMH.js"></script>
+    <link rel="stylesheet" crossorigin href="/rick-and-morty/assets/main-B3bdQoEE.css">
   </head>
   <body>
     <header class="header-img">
@@ -19,10 +19,13 @@
         </div>
 </header>
     <section class="hero-episodes">
-    <div class="container">
+    <div class="container episodes-flex">
+        <div class="episodes-text-holder">
     <h1 class="hero-episodes-title">Episodes</h1>
+    
     <p class="hero-episodes-text">With a comprehensive guide to every episode, you can relive your favorite moments and discover new ones. From the bizarre and hilarious to the emotional and thought-provoking, our episode guide covers it all.</p>
     <a href="./index.html" class="hero-episodes-link">Back home</a>
+    </div>
     <img src="/rick-and-morty/assets/episodes-hero-img-CDf5MqbC.png" alt="#" class="episodes-img">
         </div>
         
@@ -58,11 +61,15 @@
     <section class="episodes-main">
     <div class="container">
         
-        
+        <div class="episodes-filters">
+        <div class="input-episodes-holder">
         <label class="episodes-name-label" for="#">Name</label><br>
         <input class="episodes-name-input" placeholder="Enter name" type="text" name="name" id="episodesNameInput">
+        </div>
         
+        <div class="dropdown-wrapper">
         <label class="episodes-name-label" for="#">Episode code</label><br>
+        
         <div class="dropdown-holder">
         <a href="#dropdownLink"><div id="seasonSelector" class="episode-season-searcher">All season</div></a>
     <div id="dropdownLink" class="season-selector-holder">
@@ -71,6 +78,9 @@
             <div class="episode-season-option">2 season</div>
         </div>
         </div>
+        </div>
+        </div>
+        
         <ul id="episodesList" class="episodes-holder">
             
             <li class="episode-card">
@@ -88,6 +98,7 @@
                 </div>
             </div>
             </li>
+
             <li class="episode-card">
                 <div id="episode2" class="episode">
                 <h3 class="episode-title">Lawnmower Dog</h3>
@@ -103,6 +114,7 @@
                 </div>
             </div>
             </li>
+
             <li class="episode-card">
                 <div id="episode3" class="episode">
                 <h3 class="episode-title">Anatomy Park</h3>
@@ -118,6 +130,7 @@
                 </div>
             </div>
             </li>
+
             <li class="episode-card">
                 <div id="episode4" class="episode">
                 <h3 class="episode-title">M. Night Shaym-Aliens</h3>
@@ -133,6 +146,7 @@
                 </div>
             </div>
             </li>
+
             <li class="episode-card">
                 <div id="episode5" class="episode">
                 <h3 class="episode-title">Meeseeks and Destroy</h3>
@@ -148,6 +162,7 @@
                 </div>
             </div>
             </li>
+
             <li class="episode-card">
                 <div id="episode6" class="episode">
                 <h3 class="episode-title">Rick Potion #9</h3>
@@ -163,6 +178,7 @@
                 </div>
             </div>
             </li>
+
             <li class="episode-card">
                 <div id="episode8" class="episode">
                 <h3 class="episode-title">Raising Gazorpazorp</h3>
@@ -178,6 +194,7 @@
                 </div>
             </div>
             </li>
+
             <li class="episode-card">
                 <div id="episode9" class="episode">
                 <h3 class="episode-title">Rixty Minutes</h3>
@@ -193,6 +210,7 @@
                 </div>
             </div>
             </li>
+
             <li class="episode-card">
                 <div id="episode10" class="episode">
                 <h3 class="episode-title">Something Ricked This Way Comes</h3>
@@ -208,6 +226,7 @@
                 </div>
             </div>
             </li>
+
             <li class="episode-card">
                 <div id="episode10" class="episode">
                 <h3 class="episode-title">Close Rick-Counters of the Rick Kind</h3>
@@ -223,17 +242,9 @@
                 </div>
             </div>
             </li>
-            
-            
-            
-            
-            
-            
-            
-            
-            <div class="season-two-holder">
-            
-            
+
+            <!-- SEASON 2 — ONLY FIX: WRAPPER REMOVED -->
+
             <li class="episode-card">
                 <div id="episode11" class="episode season-two">
                 <h3 class="episode-title">A Rickle in Time</h3>
@@ -249,6 +260,7 @@
                 </div>
             </div>
             </li>
+
             <li class="episode-card">
                 <div id="episode12" class="episode season-two">
                 <h3 class="episode-title">Mortynight Run</h3>
@@ -264,6 +276,7 @@
                 </div>
             </div>
             </li>
+
             <li class="episode-card">
                 <div id="episode13" class="episode season-two">
                 <h3 class="episode-title">Auto Erotic Assimilation</h3>
@@ -279,6 +292,7 @@
                 </div>
             </div>
             </li>
+
             <li class="episode-card">
                 <div id="episode14" class="episode season-two">
                 <h3 class="episode-title">Total Rickall</h3>
@@ -294,6 +308,7 @@
                 </div>
             </div>
             </li>
+
             <li class="episode-card">
                 <div id="episode15" class="episode season-two">
                 <h3 class="episode-title">Get Schwifty</h3>
@@ -309,6 +324,7 @@
                 </div>
             </div>
             </li>
+
             <li class="episode-card">
                 <div id="episode16" class="episode season-two">
                 <h3 class="episode-title">The Ricks Must Be Crazy</h3>
@@ -324,6 +340,7 @@
                 </div>
             </div>
             </li>
+
             <li class="episode-card">
                 <div id="episode17" class="episode season-two">
                 <h3 class="episode-title">Big Trouble in Little Sanchez</h3>
@@ -339,6 +356,7 @@
                 </div>
             </div>
             </li>
+
             <li class="episode-card">
                 <div id="episode18" class="episode season-two">
                 <h3 class="episode-title">Interdimensional Cable 2:...</h3>
@@ -354,6 +372,7 @@
                 </div>
             </div>
             </li>
+
             <li class="episode-card">
                 <div id="episode19" class="episode season-two">
                 <h3 class="episode-title">Look Who's Purging Now</h3>
@@ -369,17 +388,18 @@
                 </div>
             </div>
             </li>
-            
-            
-            </div>
+
         </ul>
+        
         <div class="episodes-image-holder">
-        <img src="../img/try-looking-for-something-else.png" alt="Oops! Try looking for something else...">
+        <img src="/rick-and-morty/assets/try-looking-for-something-else-3HrlmSLE.png" alt="Oops! Try looking for something else...">
         <p class="episodes-img-text">Oops! Try looking for something else...</p>
         </div>
+
         <button type="button" class="episodes-load-more">Load more</button>
     </div>
 </section>
+
     <div class="modal-overlay" id="episodeModal">
     <div class="modal-box">
         <button class="modal-close" id="modalClose">×</button>
