@@ -8,8 +8,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <script type="module" crossorigin src="/rick-and-morty/assets/main-6DGlGHMH.js"></script>
-    <link rel="stylesheet" crossorigin href="/rick-and-morty/assets/main-B3bdQoEE.css">
+    <script type="module" crossorigin src="/rick-and-morty/assets/main-DEl9NdxV.js"></script>
+    <link rel="stylesheet" crossorigin href="/rick-and-morty/assets/main-j3SNRkYq.css">
   </head>
   <body>
     <header class="header-img">
@@ -18,37 +18,82 @@
     <input class="header-search" type="text" placeholder="Search">
         </div>
 </header>
-    
-    <section id="visibleImage" class="characters">
-        <div class="container characters-flex">
-        <h2 class="characters-title"><span>Main</span> characters</h2>
-        <div class="characters-holder">
-        <img  class="character-selected-image" src="/rick-and-morty/assets/Rick-Sanchez-desktop-Chir4ag3.png" alt="selected-character">
-        <ul class="characters-list-main">
-            <li class="list-main-element">
-                <a href="#visibleImage"><h2 class="rick">Rick Sanchez</h2></a>
-                <p class="rick-text">Rick Sanchez is a brilliant but deeply troubled scientist and one of the main characters in the animated TV show Rick and Morty.</p>
-            </li>
-            <li class="list-main-element">
-                <a href="#visibleImage"><h2 class="morty">Morty Smith</h2></a>
-                <p class="morty-text">Morty Smith is the other main character in the animated TV show Rick and Morty, and Rick's grandson.</p>
-            </li>
-            <li class="list-main-element">
-                <a href="#visibleImage"><h2 class="summer">Summer Smith</h2></a>
-                <p class="summer-text">Summer Smith is Morty's older sister and one of the main characters in Rick and Morty. Initially portrayed as a typical teenager, she develops into a more complex and independent character, who is intelligent, resourceful, and fiercely loyal to her family.</p>
-            </li>
-            <li class="list-main-element">
-                <a href="#visibleImage"><h2 class="beth">Beth Smith</h2></a>
-                <p class="beth-text">Beth is a horse surgeon, and, as Rick's daughter, she is intelligent if sometimes cold. She is voiced by Sarah Chalke.</p>
-            </li>
-            <li class="list-main-element">
-                <a href="#visibleImage"><h2 class="jerry">Jerry Smith</h2></a>
-                <p class="jerry-text">Jerry is the husband of Beth Smith, the father of Summer Smith and Morty Smith, and the son-in-law of Rick Sanchez.</p>
-            </li>
-        </ul>
+    <section class="hero-characters characters-flex">
+    <div class="container hero-characters-left">
+        <div class="characters-title-wrapper">
+        <h1 class="characters-title">Characters</h1>
+        <p class="characters-description">
+        Our character bios provide detailed information on every member of the
+        Smith family and beyond. Get to know these unforgettable characters on a
+        whole new level – start exploring now!
+        </p>
+        <a href="/src/index.html" class="btn-back">Back home</a>
+        </div>
+
+    <div class="rick-img">
+        <img
+        src="/rick-and-morty/assets/rick-sanchez-characters-DXCXjyDa.png"
+        alt="Character Image"
+        class="rick-desktop"
+    />
+    </div>
+    </div>
+</section>
+    <section class="characters-main">
+    <div class="container characters-main-flex">
+        <div class="characters-responsive">
+            <div class="responsive-holder">
+        <div class="filter-item">
+            <label>Name</label>
+            <div class="input-wrap">
+            <input type="text" placeholder="Enter name" />
+            </div>
+        </div>
+        <div class="input-wrapper">
+        <div class="filter-item">
+            <label>Status</label>
+            <select>
+            <option>Alive</option>
+            <option>Dead</option>
+            <option>Unknown</option>
+            </select>
+        </div>
+
+        <div class="filter-item">
+            <label>Species</label>
+            <select>
+            <option>Human</option>
+            <option>Alien</option>
+            <option>Other</option>
+            </select>
         </div>
         </div>
-    </section>
+
+        <div class="filter-item">
+            <label>Type</label>
+            <select>
+            <option>Parasite</option>
+            <option>Humanoid</option>
+            <option>None</option>
+            </select>
+        </div>
+
+        <div class="filter-item">
+            <label>Gender</label>
+            <select>
+            <option>All</option>
+            <option>Female</option>
+            <option>Male</option>
+            <option>Genderless</option>
+            <option>Unknown</option>
+            </select>
+        </div>
+        </div>
+        
+    </div>
+    <button class="load-more">Load more</button>
+    </div>
+</section>
     
         <footer class="footer-dark">
         <div class="container footer-dark-flex">
