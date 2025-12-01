@@ -252,6 +252,14 @@
 }
 
 
+.episodes-img-text {
+    margin-left: 24px;
+
+    @media screen and (min-width: 769px) {
+        margin-left: 50px;
+    }
+}
+
 
 .input-episodes-holder {
     @media screen and (min-width: 769px) {
