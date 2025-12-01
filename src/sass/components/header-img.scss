@@ -1,28 +1,33 @@
 .header-img {
-    background-color: rgba(13, 23, 29, 1);
-    
-    
+  background-color: rgba(13, 23, 29, 1);
 }
 
 .header-img-flex {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
 
+  @media screen and (min-width: 769px) {
+    gap: 387px;
+  }
 
-    @media screen and (min-width: 769px) {
-        gap: 387px;
-    }
+  @media screen and (min-width: 1279px) {
+    gap: 867px;
+  }
+}
 
-    @media screen and (min-width: 1279px) {
-        gap: 867px;
-    }
-
+.header-search:hover {
+  //   transform: scale(0.85);
+  //   transition: transform 0.4s ease;
+  //   box-shadow: 0 6px 18px rgb(161, 215, 55);
+  //   cursor: pointer;
+  box-shadow: 0px 0px 27px -8px rgba(161, 215, 55, 1);
+  cursor: pointer;
 }
 
 .header-episodes-logo {
-    @media screen and (min-width: 1279px) {
-        transform: scale(1.5);
-    }
+  @media screen and (min-width: 1279px) {
+    transform: scale(1.5);
+  }
 }
