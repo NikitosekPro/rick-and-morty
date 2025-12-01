@@ -1,69 +1,64 @@
-import rickImg from '../../img/Rick-Sanchez-desktop.png';
-import mortyImg from '../../img/Morty-Smith-desktop.png';
-import summerImg from '../../img/Summer-Smith-desktop.png';
-import bethImg from '../../img/Beth-Smith-desktop.png';
-import jerrykImg from '../../img/Jerry-Smith-desktop.png';
+import rickImg from "../../img/Rick-Sanchez-desktop.png"
+import mortyImg from "../../img/Morty-Smith-desktop.png"
+import summerImg from "../../img/Summer-Smith-desktop.png"
+import bethImg from "../../img/Beth-Smith-desktop.png"
+import jerrykImg from "../../img/Jerry-Smith-desktop.png"
 
-const rick = document.querySelector('.rick');
-const morty = document.querySelector('.morty');
-const summer = document.querySelector('.summer');
-const beth = document.querySelector('.beth');
-const jerry = document.querySelector('.jerry');
-const image = document.querySelector('.character-selected-image');
+document.addEventListener("DOMContentLoaded", () => {
 
-changeImageRick();
+    const rick = document.querySelector(".rick");
+    const morty = document.querySelector(".morty");
+    const summer = document.querySelector(".summer");
+    const beth = document.querySelector(".beth");
+    const jerry = document.querySelector(".jerry");
+    const image = document.querySelector(".character-selected-image");
 
-rick.addEventListener('click', changeImageRick);
-morty.addEventListener('click', changeImageMorty);
-summer.addEventListener('click', changeImageSummer);
-beth.addEventListener('click', changeImageBeth);
-jerry.addEventListener('click', changeImageJerry);
+    // If these elements do NOT exist on this page → STOP the script
+    if (!rick || !morty || !summer || !beth || !jerry || !image) {
+        return;
+    }
 
-function changeImageRick() {
-  rick.style.color = 'rgba(161, 215, 55, 1)';
-  image.src = rickImg;
-  morty.style.color = 'black';
-  summer.style.color = 'black';
-  beth.style.color = 'black';
-  jerry.style.color = 'black';
-}
+    // --- event handlers ---
+    changeImageRick();
 
-function changeImageMorty() {
-  image.src = mortyImg;
-  morty.style.color = 'rgba(161, 215, 55, 1)';
+    rick.addEventListener("click", changeImageRick);
+    morty.addEventListener("click", changeImageMorty);
+    summer.addEventListener("click", changeImageSummer);
+    beth.addEventListener("click", changeImageBeth);
+    jerry.addEventListener("click", changeImageJerry);
 
-  rick.style.color = 'black';
-  summer.style.color = 'black';
-  beth.style.color = 'black';
-  jerry.style.color = 'black';
-}
+    function changeImageRick() {
+        rick.style.color = "rgba(161, 215, 55, 1)";
+        image.src = rickImg;
+        resetOthers(morty, summer, beth, jerry);
+    }
 
-function changeImageSummer() {
-  summer.style.color = 'rgba(161, 215, 55, 1)';
-  image.src = summerImg;
+    function changeImageMorty() {
+        morty.style.color = "rgba(161, 215, 55, 1)";
+        image.src = mortyImg;
+        resetOthers(rick, summer, beth, jerry);
+    }
 
-  morty.style.color = 'black';
-  rick.style.color = 'black';
-  beth.style.color = 'black';
-  jerry.style.color = 'black';
-}
+    function changeImageSummer() {
+        summer.style.color = "rgba(161, 215, 55, 1)";
+        image.src = summerImg;
+        resetOthers(rick, morty, beth, jerry);
+    }
 
-function changeImageBeth() {
-  beth.style.color = 'rgba(161, 215, 55, 1)';
-  image.src = bethImg;
+    function changeImageBeth() {
+        beth.style.color = "rgba(161, 215, 55, 1)";
+        image.src = bethImg;
+        resetOthers(rick, morty, summer, jerry);
+    }
 
-  summer.style.color = 'black';
-  rick.style.color = 'black';
-  morty.style.color = 'black';
-  jerry.style.color = 'black';
-}
+    function changeImageJerry() {
+        jerry.style.color = "rgba(161, 215, 55, 1)";
+        image.src = jerrykImg;
+        resetOthers(rick, morty, summer, beth);
+    }
 
-function changeImageJerry() {
-  jerry.style.color = 'rgba(161, 215, 55, 1)';
-  image.src = jerrykImg;
+    function resetOthers(...els) {
+        els.forEach(el => el.style.color = "black");
+    }
 
-  morty.style.color = 'black';
-  summer.style.color = 'black';
-  beth.style.color = 'black';
-  rick.style.color = 'black';
-}
+});
