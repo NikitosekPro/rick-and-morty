@@ -21,23 +21,19 @@ document.addEventListener("DOMContentLoaded", () => {
     const modalClose = document.getElementById("modalClose");
 
     // ------------------------- INIT -------------------------
-    if (!allItems.length) return; // Nothing to do if no episodes
+    if (!allItems.length) return;
 
     // Activate first season option
     if (options.length > 0) options[0].classList.add("episode-season-option-active");
 
     // ------------------------- RENDER -------------------------
     function renderEpisodes() {
-        // Hide all first
         allItems.forEach(item => item.style.display = "none");
 
-        // Show filtered items up to `visible`
         filteredItems.slice(0, visible).forEach(item => item.style.display = "block");
 
-        // Load more button visibility
         if (btn) btn.style.display = filteredItems.length > visible ? "block" : "none";
 
-        // No results image visibility
         if (image) {
             const searchText = episodesNameInput?.value.trim() || "";
             image.style.display = filteredItems.length === 0 && searchText !== "" ? "block" : "none";
@@ -55,8 +51,8 @@ document.addEventListener("DOMContentLoaded", () => {
             const isSeasonTwo = episodeDiv?.classList.contains("season-two") || false;
 
             const matchesSeason = seasonText === "all season" ||
-                                  (seasonText === "1 season" && !isSeasonTwo) ||
-                                  (seasonText === "2 season" && isSeasonTwo);
+                                    (seasonText === "1 season" && !isSeasonTwo) ||
+                                    (seasonText === "2 season" && isSeasonTwo);
 
             const title = item.querySelector(".episode-title")?.textContent.toUpperCase() || "";
             const matchesSearch = title.includes(searchText);
@@ -64,22 +60,22 @@ document.addEventListener("DOMContentLoaded", () => {
             return matchesSeason && matchesSearch;
         });
 
-        visible = 8; // reset visible count
+        visible = 8;
         renderEpisodes();
     }
 
     // ------------------------- EVENTS -------------------------
 
-    // Load more
+
     btn?.addEventListener("click", () => {
         visible += 8;
         renderEpisodes();
     });
 
-    // Search input
+
     episodesNameInput?.addEventListener("input", applyFilters);
 
-    // Season filter dropdown
+
     if (dropdown && seasonSelector) {
         dropdown.addEventListener("click", (e) => {
             const clicked = e.target;
@@ -119,6 +115,5 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    // ------------------------- INITIAL RENDER -------------------------
     renderEpisodes();
 });
