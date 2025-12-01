@@ -25,12 +25,6 @@
   }
 }
 
-.characters-title-wrapper:hover {
-  transform: scale(1.1);
-  transition: transform 0.4s ease;
-  cursor: pointer;
-}
-
 .characters-title {
   margin-bottom: 14px;
   margin-top: 62px;
@@ -65,6 +59,13 @@
   transform: scale(1.05);
   transition: transform 0.4s ease;
   box-shadow: 0 6px 18px rgb(161, 215, 55);
+}
+
+.btn-back:active {
+  transform: scale(0.95); /* елемент "тиснеться" вниз */
+  background: rgb(161, 215, 55);
+  transition: transform 0.1s ease;
+  cursor: pointer;
 }
 
 .rick-img {
