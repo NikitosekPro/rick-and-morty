@@ -209,3 +209,13 @@ select {
   background: rgb(161, 215, 55);
   cursor: pointer;
 }
+
+.no-results {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.no-results img {
+  margin: 0 auto;
+  max-width: 320px;
+}
