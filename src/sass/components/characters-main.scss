@@ -128,12 +128,12 @@ select {
 }
 
 .load-more:active {
-  transform: scale(0.95); /* елемент "тиснеться" вниз */
+  transform: scale(0.95);
   background: rgb(161, 215, 55);
   transition: transform 0.1s ease;
   cursor: pointer;
 }
-/* cards layout */
+
 .cards-list {
   width: 280px;
   display: flex;
@@ -156,7 +156,6 @@ select {
   }
 }
 
-/* кожна картка */
 .char-card {
   display: flex;
   flex-direction: column;
@@ -177,12 +176,10 @@ select {
   }
 }
 
-/* контент картки */
 .char-card .content {
   padding: 10px;
 }
 
-/* ім'я */
 .char-card h3 {
   margin: 0 0 6px 0;
   font-size: 14px;
@@ -191,7 +188,6 @@ select {
   color: #111827;
 }
 
-/* дрібніші рядки */
 .char-card p {
   margin: 2px 0;
   font-size: 12px;
@@ -200,12 +196,12 @@ select {
 
 .char-card:hover {
   transform: scale(1.05);
-  transition: transform 0.4s ease; /* робить ефект плавним */
+  transition: transform 0.4s ease;
   box-shadow: 0 6px 18px rgb(161, 215, 55);
 }
 
 .char-card:active {
-  transform: scale(0.95); /* елемент "тиснеться" вниз */
+  transform: scale(0.95);
   background: rgb(161, 215, 55);
   cursor: pointer;
 }
