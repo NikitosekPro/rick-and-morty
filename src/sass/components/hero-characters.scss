@@ -3,7 +3,6 @@
   margin: 0 auto;
   background: rgba(13, 23, 29, 1);
   color: white;
-  padding: 20px;
   border-radius: 0px 0px 50px 50px;
 
   display: flex;
@@ -13,23 +12,14 @@
 }
 
 .characters-title-wrapper {
-  width: 375px;
-
   @media screen and (min-width: 769px) {
     width: 769px;
   }
 
   @media screen and (min-width: 1279px) {
     width: 1279px;
+    margin-left: 50px;
   }
-}
-
-.characters-title {
-  margin-bottom: 14px;
-  margin-top: 62px;
-  font-weight: 600;
-  font-size: 100px;
-  line-height: 44px;
 }
 
 .characters-description {
@@ -72,11 +62,11 @@
   width: 335px;
 
   @media screen and (min-width: 769px) {
-    width: 1000px;
+    width: 319px;
   }
 
   @media screen and (min-width: 1279px) {
-    width: 1000px;
+    width: 525px;
   }
 }
 
@@ -95,7 +85,6 @@
 
 @media screen and (min-width: 768px) {
   .hero-characters {
-    padding: 40px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -130,6 +119,8 @@
 }
 
 .characters-title {
+  margin-bottom: 14px;
+  margin-top: 62px;
   font-weight: 600;
   line-height: 44px;
 
@@ -143,14 +134,5 @@
     font-size: 110px;
     font-weight: 600;
     line-height: 100px;
-  }
-}
-
-@media screen and (min-width: 1279px) {
-  .rick-img {
-    width: 1000px;
-  }
-  .rick-desktop {
-    width: 505px;
   }
 }

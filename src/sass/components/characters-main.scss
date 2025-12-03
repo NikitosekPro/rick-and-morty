@@ -1,7 +1,3 @@
-.characters-main {
-  padding: 20px;
-}
-
 .characters-main-flex {
   display: flex;
   flex-direction: column;
@@ -36,7 +32,7 @@
   }
 
   @media screen and (min-width: 1279px) {
-    flex-direction: row;
+    align-items: center;
   }
 }
 
@@ -100,6 +96,7 @@
 select {
   width: 162px;
   padding: 14px 18px;
+  margin-bottom: 10px;
   border-radius: 30px;
   border: 2px solid #000;
   background: #fff;
@@ -211,7 +208,14 @@ select {
   padding: 40px 20px;
 }
 
-.no-results img {
-  margin: 0 auto;
-  max-width: 320px;
+.no-results {
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  @media screen and (min-width: 769px) {
+    width: 388px;
+    margin: 0 auto;
+    margin-bottom: 60px;
+  }
 }

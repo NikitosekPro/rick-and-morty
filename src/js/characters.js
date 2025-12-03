@@ -96,7 +96,7 @@ function render(characters, append = false) {
   if (!characters.length) {
     cardsContainer.innerHTML = `
       <div class="no-results">
-        <img src="../img/try-looking-for-something-else.png" alt="No results" />
+        <img src="./img/try-looking-for-something-else.png" alt="No results" />
         <p>Oops! Try looking for something else...</p>
       </div>
     `;
